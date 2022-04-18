@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background2"
+    tools:context=".Fragments.ProfileFragment">
+
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:gravity="center"
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:src="@drawable/iburgerlogo"
+                android:layout_width="150dp"
+                android:layout_height="150dp"/>
+
+            <EditText
+                android:id="@+id/full_name"
+                android:layout_marginTop="50dp"
+                android:layout_width="300dp"
+                android:hint="@string/f_u_l_l_name"
+                android:layout_height="50dp"
+                android:textSize="12sp"
+                android:textAlignment="center"
+                android:fontFamily="@font/ralewaymedium"
+                android:textColorHint="@color/black"
+                android:inputType="text"
+                android:background="@drawable/fileds_background"
+                />
+
+            <EditText
+                android:id="@+id/phone_number"
+                android:layout_marginTop="20dp"
+                android:layout_width="300dp"
+                android:hint="@string/p_h_o_n_e_n_u_m_b_e_r"
+                android:layout_height="50dp"
+                android:textSize="12sp"
+                android:textAlignment="center"
+                android:fontFamily="@font/ralewaymedium"
+                android:textColorHint="@color/black"
+                android:inputType="phone"
+                android:background="@drawable/fileds_background"
+                />
+
+            <EditText
+                android:id="@+id/email"
+                android:layout_marginTop="20dp"
+                android:layout_width="300dp"
+                android:hint="@string/e_m_a_i_l_a_d_d_r_e_s_s"
+                android:layout_height="50dp"
+                android:textSize="12sp"
+                android:textAlignment="center"
+                android:fontFamily="@font/ralewaymedium"
+                android:textColorHint="@color/black"
+                android:inputType="textEmailAddress"
+                android:background="@drawable/fileds_background"
+                />
+
+            <EditText
+                android:id="@+id/location"
+                android:layout_marginTop="20dp"
+                android:layout_width="300dp"
+                android:hint="@string/l_o_c_a_t_i_o_n"
+                android:layout_height="50dp"
+                android:textSize="12sp"
+                android:textAlignment="center"
+                android:fontFamily="@font/ralewaymedium"
+                android:textColorHint="@color/black"
+                android:inputType="text"
+                android:background="@drawable/fileds_background"
+                />
+
+            <EditText
+                android:id="@+id/password"
+                android:layout_marginTop="20dp"
+                android:layout_width="300dp"
+                android:hint="@string/p_a_s_s_w_o_r_d"
+                android:textSize="12sp"
+                android:textAlignment="center"
+                android:fontFamily="@font/ralewaymedium"
+                android:textColorHint="@color/black"
+                android:layout_height="50dp"
+                android:inputType="textPassword"
+                android:background="@drawable/fileds_background"
+                />
+            <EditText
+                android:id="@+id/rewrite_password"
+                android:layout_marginTop="20dp"
+                android:layout_width="300dp"
+                android:hint="@string/r_e_p_a_s_s_w"
+                android:textSize="12sp"
+                android:textAlignment="center"
+                android:fontFamily="@font/ralewaymedium"
+                android:textColorHint="@color/black"
+                android:layout_height="50dp"
+                android:inputType="textPassword"
+                android:background="@drawable/fileds_background"
+                />
+
+            <TextView
+                android:id="@+id/btn_sign_up"
+                android:layout_marginTop="50dp"
+                android:textSize="20sp"
+                android:fontFamily="@font/ralewaymedium"
+                android:textColor="@color/orange"
+                android:textStyle="bold"
+                android:text="@string/s_a_v_e"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+
+        </LinearLayout>
+
+    </ScrollView>
+
+
+</RelativeLayout>

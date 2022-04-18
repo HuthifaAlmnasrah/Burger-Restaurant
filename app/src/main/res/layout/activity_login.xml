@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Activites.LoginActivity">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:gravity="center"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <ImageView
+                android:layout_marginTop="50dp"
+                android:id="@+id/img"
+                android:layout_width="200dp"
+                android:layout_height="200dp"
+                android:src="@drawable/iburgerlogo"/>
+
+            <EditText
+                android:id="@+id/email"
+                android:layout_marginTop="50dp"
+                android:layout_width="300dp"
+                android:hint="@string/e_m_a_i_l_a_d_d_r_e_s_s"
+                android:layout_height="50dp"
+                android:textSize="15sp"
+                android:textAlignment="center"
+                android:fontFamily="@font/ralewaymedium"
+                android:textColorHint="@color/black"
+                android:inputType="textEmailAddress"
+                android:background="@drawable/fileds_background"
+                />
+
+            <EditText
+                android:id="@+id/password"
+                android:layout_marginTop="20dp"
+                android:layout_width="300dp"
+                android:hint="@string/p_a_s_s_w_o_r_d"
+                android:textSize="15sp"
+                android:textAlignment="center"
+                android:fontFamily="@font/ralewaymedium"
+                android:textColorHint="@color/black"
+                android:layout_height="50dp"
+                android:inputType="textPassword"
+                android:background="@drawable/fileds_background"
+                />
+
+            <TextView
+                android:id="@+id/btn_forget_password"
+                android:layout_marginTop="20dp"
+                android:textColor="@color/black"
+                android:textAlignment="center"
+                android:textSize="12sp"
+                android:fontFamily="@font/ralewaymedium"
+                android:layout_width="300dp"
+                android:layout_height="wrap_content"
+                android:text="@string/f_o_r_g_e_t_p_a_s_s_w_p_r_d"/>
+
+            <RelativeLayout
+                android:gravity="center"
+                android:layout_marginTop="50dp"
+                android:layout_width="300dp"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:id="@+id/count"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/d_o_n_t_h_a_v_e_a_c_c_o_u_n_t"
+                    android:textColor="@color/orange"
+                    android:textSize="12sp" />
+
+                <TextView
+                    android:id="@+id/btn_sign_up"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_toEndOf="@+id/count"
+                    android:text="@string/s_i_g_n_u_p"
+                    android:textColor="@color/orange"
+                    android:textSize="12sp" />
+
+            </RelativeLayout>
+
+            <TextView
+                android:id="@+id/btn_login"
+                android:layout_marginTop="50dp"
+                android:textColor="@color/orange"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/l_o_g_i_n"/>
+
+        </LinearLayout>
+
+    </ScrollView>
+
+</RelativeLayout>
